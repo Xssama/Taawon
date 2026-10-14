@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <meta name="description" content="inscrivez-vous pour rejoinée la communauté TAAWON.">
+        <title>page d'inscription TAAWON</title>
+    </head>
+ <body>
+    <header>
+        <div class="flex items-center justify-between p-4 h-auto">
+            <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-auto">
+            <nav>
+                <a href="cooperatives.html">Coopératives &emsp; &emsp;</a>
+                <a href="a-propos.html">A-Propos &emsp; &emsp;</a>
+                <a href="partenaire.html"><button class="bg-orange-700 text-white px-6 py-3 rounded-2xl"> Devenir Partenaire→ </button></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class=" relative h-96 bg-cover bg-center " style="background-image: url('./assets/images/cooperatives-hero.webp');">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <h1 class="relative z-10 text-white text-5xl font-bold text-center relative top-24 ">TAAWON</h1>
+            <h3 class="relative z-10 text-yellow-100 font-bold text-center relative top-36">Rejoinée notre communauté <br> valorisons ensemble le savoir-faire artisanal marocain</h3>
+        </div>
+
+        <section class="bg-orange-100 pl-6" >
+            <form>  
+                <h3>1. Informations de la Coopérative</h3><br>
+                <label for="name">Nom de la Coopérative</label><br>
+                <input type="text" id="name" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+
+                <p>La Coopérative est-elle légalement constituée</p>
+                <label>
+                    <input type="radio" name="etat">&emsp;OUI</label><br>
+                <label>
+                    <input type="radio" name="enCours">&emsp;En Cours de Procédure</label><br><br>
+
+                <h3>2. Personne de contact</h3><br>
+
+                <label for="nom">Nom Complet du Représentant</label><br>
+                <input type="text" id="nom" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+
+                <label for="tel">Telephone</label><br>
+                <input type="text" id="tel" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+
+                <label for="email">Adresse Email</label><br>
+                <input type="text" id="email" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+
+                <h3>3. Localisation</h3><br>
+
+                <label for="region"> Région</label><br>
+
+                <select id="region">
+                    <option value="Marrakech-Safi">Marrakech-Safi</option>
+                    <option value="Daraa-Tafilalet">Daraa-Tafilalet</option>
+                    <option value="Oriental">Oriental</option>
+                    <option value="Fes-Meknes">Fes-Meknes</option>
+                    <option value="Guelmim-OudNoun">Guelmim-Oud Noun</option>
+                    <option value="Làayoun">Làayoun</option>
+                </select><br><br>
+
+                 <label for="ville"> ville</label><br>
+
+                <select id="ville">
+                    <option value="Essaouira">Essaouira</option>
+                    <option value="Marrakech">Marrakech</option>
+                    <option value="Safi">Safi</option>
+                    <option value="Fes">Fes</option>
+                    <option value="Meknes">Meknes</option>
+                    <option value="Làayoun">Làayoun</option>
+                    <option value="Rabat">Rabat</option>
+                    <option value="Casa-Blanca">Casa-Blanca</option>
+                    <option value="Nador">Nador</option>
+                </select><br><br>
+
+                <h3>4. Activité Artisanale</h3><br>
+
+                <label for="categorie"> Catégorie Principale</label><br>
+
+                <select id="categorie">
+                    <option value="potterie">Potterie</option>
+                    <option value="Bijoux">Bijoux</option>
+                    <option value="Vannerie">Vannerie</option>
+                    <option value="Cuir">Cuir</option>
+                    <option value="Bois">Bois</option>
+                    <option value="Tapis-Tissage">Tapis & Tissage</option>
+                </select><br><br>
+
+                <label for="presentation">Présentation de la Coopérative</label><br>
+                <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white"><br><br>
+
+                <label>
+                    <input type="radio" name="consentement">&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br>
+
+                </form>
+
+                    <button>Valider la Demande</button>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+   
+    
+
+
+
+
+
+
+
+ </body>
+</html>
+
+
+
+
+
+
+
