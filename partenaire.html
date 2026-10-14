@@ -10,7 +10,7 @@
  <body>
     <header>
         <div class="flex items-center justify-between p-4 h-auto">
-            <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-auto">
+            <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-20">
             <nav>
                 <a href="cooperatives.html">Coopératives &emsp; &emsp;</a>
                 <a href="a-propos.html">A-Propos &emsp; &emsp;</a>
@@ -18,6 +18,9 @@
             </nav>
         </div>
     </header>
+
+
+
     <main>
         <div class=" relative h-96 bg-cover bg-center " style="background-image: url('./assets/images/cooperatives-hero.webp');">
             <div class="absolute inset-0 bg-black/50"></div>
@@ -27,32 +30,32 @@
 
         <section class="bg-orange-100 pl-6" >
             <form>  
-                <h3>1. Informations de la Coopérative</h3><br>
-                <label for="name">Nom de la Coopérative</label><br>
-                <input type="text" id="name" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+                <h3 class="pt-12 text-4xl">1. Informations sur la Coopérative</h3><br>
+                <label class="text-2xl" for="name">Nom de la Coopérative</label><br>
+                <input type="text" id="name" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
 
-                <p>La Coopérative est-elle légalement constituée</p>
-                <label>
-                    <input type="radio" name="etat">&emsp;OUI</label><br>
-                <label>
-                    <input type="radio" name="enCours">&emsp;En Cours de Procédure</label><br><br>
+                <p class="text-2xl">La Coopérative est-elle légalement constituée</p><br>
+                <label class="text-xl">
+                    <input class="h-7 w-7" type="radio" name="etat">&emsp;OUI</label><br>
+                <label class="text-xl">
+                    <input class="h-7 w-7" type="radio" name="enCours">&emsp;En Cours de Procédure</label><br><br>
 
-                <h3>2. Personne de contact</h3><br>
+                <h3 class="text-4xl">2. Personne de contact</h3><br>
 
-                <label for="nom">Nom Complet du Représentant</label><br>
-                <input type="text" id="nom" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+                <label class="text-2xl" for="nom">Nom Complet du Représentant</label><br>
+                <input type="text" id="nom" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
 
-                <label for="tel">Telephone</label><br>
-                <input type="text" id="tel" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+                <label class="text-2xl" for="tel">Telephone</label><br>
+                <input type="text" id="tel" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
 
-                <label for="email">Adresse Email</label><br>
-                <input type="text" id="email" class="border border-gray-500 rounded-2xl p-1 bg-white"><br><br>
+                <label class="text-2xl" for="email">Adresse Email</label><br>
+                <input type="text" id="email" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
 
-                <h3>3. Localisation</h3><br>
+                <h3 class="text-4xl" >3. Localisation</h3><br>
 
-                <label for="region"> Région</label><br>
+                <label class="text-2xl" for="region"> Région</label><br>
 
-                <select id="region">
+                <select id="region" class="text-xl bg-orange-100">
                     <option value="Marrakech-Safi">Marrakech-Safi</option>
                     <option value="Daraa-Tafilalet">Daraa-Tafilalet</option>
                     <option value="Oriental">Oriental</option>
@@ -61,9 +64,9 @@
                     <option value="Làayoun">Làayoun</option>
                 </select><br><br>
 
-                 <label for="ville"> ville</label><br>
+                 <label class="text-2xl" for="ville"> ville</label><br>
 
-                <select id="ville">
+                <select id="ville" class="text-xl bg-orange-100">
                     <option value="Essaouira">Essaouira</option>
                     <option value="Marrakech">Marrakech</option>
                     <option value="Safi">Safi</option>
@@ -75,11 +78,11 @@
                     <option value="Nador">Nador</option>
                 </select><br><br>
 
-                <h3>4. Activité Artisanale</h3><br>
+                <h3 class="text-4xl" >4. Activité Artisanale</h3><br>
 
-                <label for="categorie"> Catégorie Principale</label><br>
+                <label class="text-2xl" for="categorie"> Catégorie Principale</label><br>
 
-                <select id="categorie">
+                <select id="categorie" class="text-xl bg-orange-100">
                     <option value="potterie">Potterie</option>
                     <option value="Bijoux">Bijoux</option>
                     <option value="Vannerie">Vannerie</option>
@@ -88,31 +91,84 @@
                     <option value="Tapis-Tissage">Tapis & Tissage</option>
                 </select><br><br>
 
-                <label for="presentation">Présentation de la Coopérative</label><br>
-                <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white"><br><br>
+                <label class="text-2xl" for="presentation">Présentation de la Coopérative</label><br>
+                <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white h-20 w-200"><br><br>
 
-                <label>
-                    <input type="radio" name="consentement">&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br>
+                <label class="text-xl">
+                    <input class="h-7 w-7" type="radio" name="consentement">&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br>
 
-                </form>
+                </form><br><br>
 
-                    <button>Valider la Demande</button>
+                    <button class="bg-orange-700 text-black px-6 py-3 rounded-2xl block mx-auto w-100" >Valider la Demande</button><br><br>
         </section>
+        <section>
+            <div>
+                <h1 class="bg-amber-900 h-50 text-black flex justify-center items-center h64 text-4xl font-bold ">FAQ---Question Fréquente</h1>
+            </div>
 
+            <div class="max-w-full mx-auto ">
+                <details class="border rounded-xl p-5 bg-orange-100">
+                    <summary class="font-bold cursor-pointer text-center text-lg"> Question-1- +Reponse</summary>
+                    <p class="mt-4 text-gray-600"> Qu-est ce que TAAWON?<br> TAAWON est une plateforme qui met en valeur les Coopérativeset l'artisanat marocain.</p>
+                </details>
 
+                <details class="border rounded-xl p-5 bg-orange-100">
+                    <summary class="font-bold cursor-pointer text-center text-lg"> Question-2- +Reponse</summary>
+                    <p class="mt-4 text-gray-600"> Comment contacter une coopérative?<br> Consultez les informations de la coopérative sur sa page pour découvrir ses coordonées.</p>
+                </details>
 
+                <details class="border rounded-xl p-5 bg-orange-100">
+                    <summary class="font-bold cursor-pointer text-center text-lg"> Question-3- +Reponse</summary>
+                    <p class="mt-4 text-gray-600"> Comment rejoindre TAAWON?<br> Vous-pouvez remplir le formulaire de demande d'adhésion disponible sur notre site.</p>
+                </details>
 
+                <details class="border rounded-xl p-5 bg-orange-100">
+                    <summary class="font-bold cursor-pointer text-center text-lg"> Question-4- +Reponse</summary>
+                    <p class="mt-4 text-gray-600"> Quels produits peut-on découvrir?<br> Vous-pouvez découvrir des produits artisanaux, de la potterie, des tapis et d'autre créations.</p>
+                </details>
 
-
-
-
-
-
-
-
+            </div>
+        </section>
     </main>
    
-    
+    <footer class="grid grid-cols-4 gap-6 p-8">
+        <div>
+            <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class=" w- h-50">
+        </div>
+
+        <div>
+            <h3 class="text-green-700 text-xl font-bold mb-3">Navigation</h3>
+            <nav class="flex flex-col gap-2">
+                <a href="index.html">Acceuil</a>
+                <a href="a-propos.html">A propos</a>
+                <a href="cooperatives.html">Coopératives</a>
+                <a href="partenaire.html">inscription</a>
+            </nav>
+        </div>
+        
+        <div>
+            <h3 class="text-green-700 text-xl font-bold mb-3">Find-Us</h3>
+            <nav class="flex flex-col gap-2">
+                <a href="www.instagram.com">INSTAGRAM</a>
+                <a href="www.facebook.com">FACEBOOK</a>
+                <a href="www.Linkedin.com">LinkeDin</a>
+                <a href="www.youtube.com">YOUTUBE</a>
+                <a href="www.email.com">Gmail</a>
+            </nav>
+        </div>
+            
+        <div>
+            <h3 class="text-green-700 text-xl font-bold mb-3">Ressources</h3>
+            <div class="flex flex-col gap-2">
+                <p class="m-0">2026 TAAWON</p>
+                <p class="m-0">Tous Droits Réservés</p>
+                <a href="www.politique.com">Politique de Confidentialités</a>
+                <a href="www.conditions d'utilisation">Conditions d'Utilisation</a>
+                <a href="www.cookies.com">Cookies</a>
+                <a href="www.accessibilité.com">Accéssibilité</a>
+            </div>
+        </div>
+      
 
 
 
@@ -120,9 +176,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+    </footer>
  </body>
 </html>
-
 
 
 
