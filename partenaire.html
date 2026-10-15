@@ -25,37 +25,38 @@
         <div class=" relative h-96 bg-cover bg-center " style="background-image: url('./assets/images/cooperatives-hero.webp');">
             <div class="absolute inset-0 bg-black/50"></div>
             <h1 class="relative z-10 text-white text-5xl font-bold text-center relative top-24 ">TAAWON</h1>
-            <h3 class="relative z-10 text-yellow-100 font-bold text-center relative top-36">Rejoinée notre communauté <br> valorisons ensemble le savoir-faire artisanal marocain</h3>
+            <h3 class="relative z-10 text-yellow-100 text-3xl font-bold text-center relative top-36">Rejoinée notre communauté <br> valorisons ensemble le savoir-faire artisanal marocain</h3>
         </div>
 
         <section class="bg-orange-100 pl-6" >
             <form>  
                 <h3 class="pt-12 text-4xl">1. Informations sur la Coopérative</h3><br>
-                <label class="text-2xl" for="name">Nom de la Coopérative</label><br>
-                <input type="text" id="name" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
+                <label class="text-2xl" for="name" >Nom de la Coopérative</label><br>
+                <input type="text" id="name" placeholder="ex: Annamil Al Ikhwa" minlength="3" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
 
                 <p class="text-2xl">La Coopérative est-elle légalement constituée</p><br>
                 <label class="text-xl">
-                    <input class="h-7 w-7" type="radio" name="etat">&emsp;OUI</label><br>
+                    <input class="h-7 w-7" type="radio" name="etat" required>&emsp;OUI</label><br>
                 <label class="text-xl">
-                    <input class="h-7 w-7" type="radio" name="enCours">&emsp;En Cours de Procédure</label><br><br>
+                    <input class="h-7 w-7" type="radio" name="etat">&emsp;En Cours de Procédure</label><br><br>
 
                 <h3 class="text-4xl">2. Personne de contact</h3><br>
 
                 <label class="text-2xl" for="nom">Nom Complet du Représentant</label><br>
-                <input type="text" id="nom" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
+                <input type="text" id="nom" minlength="3" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
 
                 <label class="text-2xl" for="tel">Telephone</label><br>
-                <input type="text" id="tel" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
+                <input type="tel" id="tel" placeholder="+212 XXXXXXXXX" pattern="(0[5-7][0-9]{8}|\+212[5-7][0-9]{8})" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
 
                 <label class="text-2xl" for="email">Adresse Email</label><br>
-                <input type="text" id="email" class="border border-gray-500 rounded-2xl p-1 bg-white w-200"><br><br>
+                <input type="email" id="email" placeholder="ex: exemple@gmail.com" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
 
                 <h3 class="text-4xl" >3. Localisation</h3><br>
 
                 <label class="text-2xl" for="region"> Région</label><br>
 
-                <select id="region" class="text-xl bg-orange-100">
+                <select id="region" class="text-xl bg-orange-200 rounded-2xl" required>
+                    <option value="" selected disabled> choisir votre région</option>
                     <option value="Marrakech-Safi">Marrakech-Safi</option>
                     <option value="Daraa-Tafilalet">Daraa-Tafilalet</option>
                     <option value="Oriental">Oriental</option>
@@ -66,7 +67,8 @@
 
                  <label class="text-2xl" for="ville"> ville</label><br>
 
-                <select id="ville" class="text-xl bg-orange-100">
+                <select id="ville" class="text-xl bg-orange-200 rounded-2xl " required>
+                    <option value="" selected disabled> choisir votre ville</option>
                     <option value="Essaouira">Essaouira</option>
                     <option value="Marrakech">Marrakech</option>
                     <option value="Safi">Safi</option>
@@ -82,7 +84,8 @@
 
                 <label class="text-2xl" for="categorie"> Catégorie Principale</label><br>
 
-                <select id="categorie" class="text-xl bg-orange-100">
+                <select id="categorie" class="text-xl bg-orange-200 rounded-2xl" required>
+                    <option value="" selected disabled> choisir une catégorie</option>
                     <option value="potterie">Potterie</option>
                     <option value="Bijoux">Bijoux</option>
                     <option value="Vannerie">Vannerie</option>
@@ -95,11 +98,12 @@
                 <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white h-20 w-200"><br><br>
 
                 <label class="text-xl">
-                    <input class="h-7 w-7" type="radio" name="consentement">&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br>
-
+                    <input class="h-7 w-7" type="radio" name="consentement" required>&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br><br><br>
+                    
+                    <button class="bg-orange-700 text-black px-6 py-3 rounded-2xl block mx-auto w-100" >Valider la Demande</button><br><br>
+                
                 </form><br><br>
 
-                    <button class="bg-orange-700 text-black px-6 py-3 rounded-2xl block mx-auto w-100" >Valider la Demande</button><br><br>
         </section>
         <section>
             <div>
