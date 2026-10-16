@@ -8,13 +8,15 @@
         <title>page d'inscription TAAWON</title>
     </head>
  <body>
+
+
     <header>
-        <div class="flex items-center justify-between p-4 h-auto">
-            <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-20">
-            <nav>
-                <a href="cooperatives.html">Coopératives &emsp; &emsp;</a>
-                <a href="a-propos.html">A-Propos &emsp; &emsp;</a>
-                <a href="partenaire.html"><button class="bg-orange-700 text-white px-6 py-3 rounded-2xl"> Devenir Partenaire→ </button></a>
+        <div class="flex flex-col md:flex-row items-center justify-between p-4 gap-4">
+            <a href="index.html"><img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-auto"></a>
+            <nav class="flex flex-wrap items-center justify-center gap-3 md:gap-6">
+                <a href="cooperatives.html" class="text-sm md:text-base">Coopératives &emsp; &emsp;</a>
+                <a href="a-propos.html" class="text-sm md:text-base">A-Propos &emsp; &emsp;</a>
+                <a href="partenaire.html"><button class="bg-orange-700 text-white px-4 py-2 rounded-2xl text-sm md:text-base"> Devenir Partenaire→ </button></a>
             </nav>
         </div>
     </header>
@@ -28,11 +30,11 @@
             <h3 class="relative z-10 text-yellow-100 text-3xl font-bold text-center top-36">Rejoinée notre communauté <br> valorisons ensemble le savoir-faire artisanal marocain</h3>
         </div>
 
-        <section class="bg-orange-100 pl-6" >
+        <section class="bg-orange-100 px-4 md:px-6 py-6" >
             <form>  
                 <h3 class="pt-12 text-4xl">1. Informations sur la Coopérative</h3><br>
                 <label class="text-2xl" for="name" >Nom de la Coopérative</label><br>
-                <input type="text" id="name" placeholder="ex: Annamil Al Ikhwa" minlength="3" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
+                <input type="text" id="name" placeholder="ex: Annamil Al Ikhwa" minlength="3" class="border border-gray-500 rounded-2xl p-2 bg-white w-full max-w-2xl" required><br><br>
 
                 <p class="text-2xl">La Coopérative est-elle légalement constituée</p><br>
                 <label class="text-xl">
@@ -43,13 +45,13 @@
                 <h3 class="text-4xl">2. Personne de contact</h3><br>
 
                 <label class="text-2xl" for="nom">Nom Complet du Représentant</label><br>
-                <input type="text" id="nom" minlength="3" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
+                <input type="text" id="nom" minlength="3" class="border border-gray-500 rounded-2xl p-1 bg-white w-full max-w-2xl" required><br><br>
 
                 <label class="text-2xl" for="tel">Telephone</label><br>
-                <input type="tel" id="tel" placeholder="+212 XXXXXXXXX" pattern="(0[5-7][0-9]{8}|\+212[5-7][0-9]{8})" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
+                <input type="tel" id="tel" placeholder="+212 XXXXXXXXX" pattern="(0[5-7][0-9]{8}|\+212[5-7][0-9]{8})" class="border border-gray-500 rounded-2xl p-1 bg-white w-full max-w-2xl" required><br><br>
 
                 <label class="text-2xl" for="email">Adresse Email</label><br>
-                <input type="email" id="email" placeholder="ex: exemple@gmail.com" class="border border-gray-500 rounded-2xl p-1 bg-white w-200" required><br><br>
+                <input type="email" id="email" placeholder="ex: exemple@gmail.com" class="border border-gray-500 rounded-2xl p-1 bg-white w-full max-w-2xl" required><br><br>
 
                 <h3 class="text-4xl" >3. Localisation</h3><br>
 
@@ -95,12 +97,12 @@
                 </select><br><br>
 
                 <label class="text-2xl" for="presentation">Présentation de la Coopérative</label><br>
-                <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white h-20 w-200"><br><br>
+                <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white h-20 w-full max-w-2xl"><br><br>
 
                 <label class="text-xl">
                     <input class="h-7 w-7" type="radio" name="consentement" required>&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br><br><br>
                     
-                    <button class="bg-orange-700 text-black px-6 py-3 rounded-2xl block mx-auto w-100" >Valider la Demande</button><br><br>
+                    <button class="bg-orange-700 text-black px-6 py-3 rounded-2xl block w-full max-w-2xl mx-auto" >Valider la Demande</button><br><br>
                 
                 </form><br><br>
 
@@ -134,8 +136,9 @@
             </div>
         </section>
     </main>
+
    
-    <footer class="grid grid-cols-4 gap-6 p-8">
+    <footer class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
         <div>
             <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class=" w- h-50">
         </div>
