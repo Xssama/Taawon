@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="flex items-center justify-between p-4 h-auto">
-            <img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-20">
+            <a href="index.html"><img src="assets/icons/Taawon-logo.svg" alt="logo TAAWON" class="w-16 h-20"></a>
             <nav>
                 <a href="cooperatives.html">Coopératives &emsp; &emsp;</a>
                 <a href="a-propos.html">A-Propos &emsp; &emsp;</a>
@@ -19,45 +19,45 @@
         </div>
     </header>
     <main>
-        <section id="home-hero" class="bg-[url(./assets/images/hero-image.webp)] bg-black/30 bg-blend-multiply bg-fixed h-96 text-center py-14 flex flex-col gap-10">
-            <h1 class="text-4xl text-white font-bold">À la rencontre des coopératives artisanales du Maroc</h1>
-            <p class="text-2xl text-yellow-100 font-medium mx-auto w-1/2 text-center ">Découvrez les coopératives qui font vivre les savoir-faire marocains, 
+        <section id="home-hero" class="bg-[url(./assets/images/hero-image.webp)] bg-black/30 bg-blend-multiply bg-fixed min-h-96 text-center items-center py-14 flex flex-col gap-10">
+            <h1 class="text-3xl lg:text-4xl w-3/4 text-white font-bold">À la rencontre des coopératives artisanales du Maroc</h1>
+            <p class="text-xl lg:text-2xl text-yellow-100 font-medium mx-auto lg:w-1/2 text-center ">Découvrez les coopératives qui font vivre les savoir-faire marocains, 
                 leurs créations authentiques et les histoires
                 qui se transmettent de génération en génération.</p>
                 <div class="flex justify-center gap-2">
-                    <a href="partenaire.html" class="bg-lime-200 text-black py-2 px-8 text-lg font-bold rounded-2xl w-40 hover:bg-white/90 focus:shadow-2xl">Partenaire</a>
+                    <a href="partenaire.html" class="bg-yellow-700 text-black py-2 px-8 text-lg font-bold rounded-2xl w-40 hover:bg-white/90 focus:shadow-2xl">Partenaire</a>
                     <a href="cooperatives.html" class="bg-taupe-700 text-white py-2 px-4 text-lg font-bold rounded-2xl w-40 hover:bg-black/90 focus:shadow-2xl">Cooperatives</a>
                 </div>
             
         </section>
-        <section id="chiffres-cles" class="flex justify-between text-4xl font-mono px-4 py-6">
-            <div class="px-11 flex-col text-center gap-1 bg-[#C5936E] py-10 rounded-md">
+        <section id="chiffres-cles" class="flex justify-between text-lg lg:text-4xl font-mono px-4 py-6">
+            <div class="px-2 lg:px-11 flex-col text-center gap-1 bg-[#C5936E] py-10 rounded-md">
                 <p>9</p>
                 <p>Cooperatives</p>
             </div>
-            <div class="px-11 flex-col text-center gap-1 bg-[#CFA558] py-10 rounded-md">
+            <div class="px-2 lg:px-11 flex-col text-center gap-1 bg-[#CFA558] py-10 rounded-md">
                 <p>250</p>
                 <p>Artisants</p>
             </div>
-            <div class="px-11 flex-col text-center gap-1 bg-[#BA7F41] py-10 rounded-md">
+            <div class="px-2 lg:px-11 flex-col text-center gap-1 bg-[#BA7F41] py-10 rounded-md">
                 <p>6</p>
                 <p>Régions</p>
             </div>
-            <div class="px-11 flex-col text-center gap-1 bg-[#BA7F41] py-10 rounded-md">
+            <div class="px-2 lg:px-11 flex-col text-center gap-1 bg-[#BA7F41] py-10 rounded-md">
                 <p>100+</p>
                 <p>Produits</p>
             </div>
         </section>
         <section id="categories" class="bg-[#e2e0e0] pb-8 mb-5">
-            <div class="bg-[#D7BCA8] rounded-sm text-6xl text-center py-20 font-mono">
+            <div class="bg-[#D7BCA8] rounded-sm text-2xl lg:text-6xl text-center py-10 lg:py-20 font-mono">
                 <h2>Decouvrir les catégories d’artisanat</h2>
             </div>
-            <section class="grid grid-cols-6 h-[50vw]">
-                <div class="row-span-2 col-span-2">
+            <section class="grid grid-cols-2 lg:grid-cols-6 lg:h-[50vw] [&>div>img]:h-64 lg:[&>div>img]:h-auto">
+                <div class="lg:row-span-2 lg:col-span-2">
                     <img src="/assets/images/vannerie-paniers-tresses-marocains.webp" alt="Paniers et corbeilles marocains tressés à la main, aux motifs géométriques colorés." class="object-cover w-full block">
                     <p class="text-center py-3 text-3xl bg-[#096999]">Vannerie</p>
                 </div>
-                <div class="col-span-2 flex flex-col h-full ">
+                <div class="lg:col-span-2 flex flex-col h-full ">
                     <img src="/assets/images/tapis-tissage-artisanal-marocain.webp" alt="Collection de tapis marocains tissés à la main, aux motifs traditionnels et aux couleurs variées." class="object-cover w-full block flex-1 min-h-0 ">
                     <p class="text-center py-3 text-3xl bg-[#DD823F]">Tappis et Tissage</p>
                 </div><div>
@@ -66,10 +66,10 @@
                 </div><div>
                     <img src="/assets/images/bijoux-collier-artisanal-marocain.webp" alt="Collier traditionnel marocain composé de perles rouges et de pendentifs décoratifs." class="object-cover w-full block">
                     <p class="text-center py-3 text-3xl bg-[#B61818]">Bijoux</p>
-                </div><div class="col-span-2 object-cover min-h-0">
+                </div><div class="lg:col-span-2 object-cover min-h-0">
                     <img src="/assets/images/cuir-tannerie-traditionnelle-marocaine.webp" alt="Bassins d'une tannerie traditionnelle marocaine utilisés pour le traitement artisanal du cuir." class="">
                     <p class="text-center py-3 text-3xl bg-[#96895A]">Cuir</p>
-                </div><div class="col-span-2">
+                </div><div class="lg:col-span-2">
                     <img src="/assets/images/poterie-ceramique-decorative-marocaine.webp" alt="Assiettes et bols en céramique marocaine peints à la main avec des motifs floraux et géométriques colorés." class="object-cover w-full block">
                     <p class="text-center py-3 text-3xl bg-[#6A1A91]">Potterie</p>
                 </div>
@@ -80,8 +80,8 @@
                 <h2 class="text-4xl font-semibold">La parole aux coopératives</h2>
                 <p class="text-2xl">Découvrez les avis authentiques sur les coopératives artisanales marocaines.</p>
             </div>
-            <section id="reviews" class="grid grid-cols-3 gap-10">
-                <div class="bg-white rounded-md shadow-xl p-8">
+            <section id="reviews" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+                <div class="bg-white rounded-xl shadow-xl p-8">
                     <p class="text-amber-500 text-4xl">★ ★ ★ ★ ★</p>
                     <p class="text-lg text-center px-4 font-serif my-2">
                         "Les tapis Amazighs de la 
@@ -94,7 +94,7 @@
                     <br>
                     <a href="./cooperative.html" class="text-[#E38A4E] text-xl">lire l'avis sur taawon →</a>
                 </div>
-                <div class="bg-white rounded-md shadow-xl p-8 ">
+                <div class="bg-white rounded-xl shadow-xl p-8 ">
                     <p class="text-amber-500 text-4xl">★ ★ ★ ★ ★</p>
                     <p class="text-lg text-center px-4 font-serif my-2">
                         "Commande d'huile d'Argan pure
@@ -107,7 +107,7 @@
                     <br>
                     <a href="./cooperative.html " class="text-[#E38A4E] text-xl">lire l'avis sur taawon →</a>
                 </div>
-                <div class="bg-white rounded-md shadow-xl p-8">
+                <div class="bg-white rounded-xl shadow-xl p-8">
                     <p class="text-amber-500 text-4xl">★ ★ ★ ★ ★</p>
                     <p class="text-lg text-center px-4 font-serif my-2">
                         "Service impeccable pour notre hôtel à Marrakech.
