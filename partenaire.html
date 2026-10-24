@@ -32,14 +32,16 @@
         <section class="bg-orange-100 flex justify-center">
             <form class="mx-4">  
                 <h3 class="pt-12 text-sm md:text-4xl">1. Informations sur la Coopérative</h3><br>
-                <label class="text-sm md:text-2xl" for="name" >Nom de la Coopérative</label><br>
+                <label class="text-sm md:text-2xl" for="name" >Nom de la Coopérative</label>
                 <input type="text" id="name" placeholder="ex: Annamil Al Ikhwa" minlength="3" class="border border-gray-500 rounded-2xl p-2 bg-white w-full max-w-2xl" required><br><br>
 
-                <p class="text-sm md:text-2xl">La Coopérative est-elle légalement constituée</p><br>
-                <label class="text-sm md:text-xl">
-                    <input class="h-7 w-7" type="radio" name="etat" required>&emsp;OUI</label><br>
-                <label class="text-sm md:text-xl">
-                    <input class="h-7 w-7" type="radio" name="etat">&emsp;En Cours de Procédure</label><br><br>
+                <p class="text-sm md:text-2xl">La Coopérative est-elle légalement constituée ?</p>
+                <div class="grid ">
+                    <label class="text-sm md:text-xl py-2">
+                        <input class="h-7 w-7" type="radio" name="etat" required> OUI</label>
+                    <label class="text-sm md:text-xl">
+                        <input class="h-7 w-7 py-2" type="radio" name="etat">En Cours de Procédure</label>
+                </div>
 
                 <h3 class="text-sm md:text-4xl">2. Personne de contact</h3><br>
 
@@ -99,7 +101,7 @@
                 <input type="text" id="presentation" class="border border-gray-500 rounded-2xl p-2 bg-white h-20 w-full max-w-2xl"><br><br>
 
                 <label class="text-sm md:text-xl">
-                    <input class="h-7 w-7" type="radio" name="consentement" required>&emsp;Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br><br><br>
+                    <input class="h-7 w-7" type="radio" name="consentement" required>Je confirme l'exactitude des informations fournies <br>et j'accepte qu'elles soient utilisées pour traiter ma demande d'adhésion.</label><br><br><br>
                     
                     <button class="bg-orange-700 text-black px-6 py-3 rounded-2xl block w-full max-w-2xl mx-auto" >Valider la Demande</button><br><br>
                 
